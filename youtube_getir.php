@@ -4,7 +4,7 @@ require_once "app.php";
 
 global $pdo;
 
-$sql = $pdo->prepare("SELECT title, video FROM c2ley_k2_items WHERE catid = 4 AND published = 1 order by id DESC LIMIT 4;");
+$sql = $pdo->prepare("SELECT title, video FROM c2ley_k2_items WHERE catid IN (30,31,4,25,24,23,26,14,22,21,13,12) AND publish_up <= CURDATE( ) AND published = 1 ORDER BY id DESC LIMIT 10;");
 $sql->execute();
 
 $data = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -18,6 +18,7 @@ $linkler = [];
 // video içinde gelen iframe içerisinden youtube video idsini çekiyoruz.
 
 foreach ($data as $link) {
+    // regular expression
     preg_match('/embed\/([A-Za-z0-9_-]+)/', $link ['video'], $youtube_id);
 
     $linkler [] = array(
@@ -28,4 +29,6 @@ foreach ($data as $link) {
     //thumbnail öz izleme satırını göstermek için
 }
 
-echo json_encode($linkler);
+echo json_encode(
+    array("results" => $linkler)
+);
