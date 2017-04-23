@@ -10,8 +10,7 @@ if (isset($_GET ["id"])){
 
     //execute edip içerisine id atayıp get'in içerisine atanan idleri sql injection ataklarından korumak için yaptık.
     //http://localhost/coverevi_api/haber_getir.php? -> buraya gelen idler get ile./
-}
-else {
+} else {
     $sql = $pdo->prepare("SELECT id, title, introtext FROM c2ley_k2_items WHERE catid = 1 AND published = 1 order by id DESC LIMIT 4;");
     $sql->execute();
 }
@@ -25,12 +24,14 @@ foreach ($data as $haber) {
     preg_match_all('/src="(.*?)"/', $haber ["introtext"], $haber_resim);
 
     $haber ["introtext"] = strip_tags($haber ["introtext"]);
+
     if (isset($haber_resim[1][0])){
         $haber ["resim"] = "http://www.coverevi.com/" . $haber_resim[1][0];
     }
     else {
-        $haber ["resim"] = "http://coverevi.com/media/k2/items/cache/". md5 ("Image." .$haber["id"]) . "_S.jpg";
+        $haber ["resim"] = "http://coverevi.com/media/k2/items/cache/". md5 ("Image" .$haber["id"]) . "_Generic.jpg";
     }
+
     $haberler [] = $haber;
 }
 

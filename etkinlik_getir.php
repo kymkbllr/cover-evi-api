@@ -11,7 +11,7 @@ if (isset($_GET ["id"])){
     //http://localhost/coverevi_api/haber_getir.php? -> buraya gelen idler get ile./
 }
 else {
-    $sql = $pdo->prepare("SELECT title, extra_fields_search FROM c2ley_k2_items WHERE catid = 3 AND published = 1 order by id DESC LIMIT 4;");
+    $sql = $pdo->prepare("SELECT title, extra_fields_search FROM c2ley_k2_items WHERE catid = 3 AND published = 1 AND trash = 0 order by id DESC LIMIT 4;");
     $sql->execute();
 }
 
@@ -25,4 +25,6 @@ foreach ($data as $haber) {
     $haberler [] = $haber;
 }
 
-echo json_encode($haberler);
+echo json_encode(
+    array("results" => $haberler)
+);
