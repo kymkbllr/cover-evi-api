@@ -4,7 +4,20 @@ require_once "app.php";
 
 global $pdo;
 
-$sql = $pdo->prepare("SELECT title, video FROM c2ley_k2_items WHERE catid IN (30,31,4,25,24,23,26,14,22,21,13,12) AND publish_up <= CURDATE( ) AND published = 1 ORDER BY id DESC LIMIT 10;");
+$count = 10;
+
+if (isset($_GET["count"]) && is_numeric($_GET["count"])) {
+    $count = $_GET["count"];
+}
+
+if (isset($_GET["tur"]) && is_numeric($_GET["tur"])) {
+    $sql = $pdo->prepare("SELECT title, video FROM c2ley_k2_items WHERE catid = :tur AND publish_up <= CURDATE( ) AND published = 1 ORDER BY id DESC LIMIT :cnt;");
+    $sql->bindValue(":tur", $_GET['tur'], PDO::PARAM_INT);
+} else {
+    $sql = $pdo->prepare("SELECT title, video FROM c2ley_k2_items WHERE catid IN (30,31,4,25,24,23,26,14,22,21,13,12) AND publish_up <= CURDATE( ) AND published = 1 ORDER BY id DESC LIMIT :cnt;");
+}
+
+$sql->bindValue(":cnt", intval($count), PDO::PARAM_INT);
 $sql->execute();
 
 $data = $sql->fetchAll(PDO::FETCH_ASSOC);

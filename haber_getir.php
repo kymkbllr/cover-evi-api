@@ -11,7 +11,13 @@ if (isset($_GET ["id"])){
     //execute edip içerisine id atayıp get'in içerisine atanan idleri sql injection ataklarından korumak için yaptık.
     //http://localhost/coverevi_api/haber_getir.php? -> buraya gelen idler get ile./
 } else {
-    $sql = $pdo->prepare("SELECT id, title, introtext FROM c2ley_k2_items WHERE catid = 1 AND published = 1 order by id DESC LIMIT 4;");
+    $count = 4;
+
+    if (isset($_GET["count"]) && is_numeric($_GET["count"]))
+        $count = $_GET["count"];
+
+    $sql = $pdo->prepare("SELECT id, title, introtext FROM c2ley_k2_items WHERE catid = 1 AND published = 1 order by id DESC LIMIT :cnt;");
+    $sql->bindValue(":cnt", intval($count), PDO::PARAM_INT);
     $sql->execute();
 }
 
