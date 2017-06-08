@@ -1,8 +1,9 @@
 <?php
+
  require_once "config.php";
  global $db_config;
 
- // header("Content-Type: text/json");
+ //header("Content-Type: text/json");
 
  try {
      $pdo = new PDO("mysql:host=".$db_config['host'].";dbname=".$db_config['veritabani_adi'] ."",
