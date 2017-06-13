@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c186de-fcdb-4c6c-9093-2bf2b64b006d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iletisim.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.php" afterPath="$PROJECT_DIR$/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etkinlik_getir.php" afterPath="$PROJECT_DIR$/etkinlik_getir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haber_getir.php" afterPath="$PROJECT_DIR$/haber_getir.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,22 +36,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="iletisim.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iletisim.php">
+      <file leaf-file-name="haber_getir.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/haber_getir.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="100">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+                <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+                <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +67,6 @@
       <list>
         <option value="$PROJECT_DIR$/style.css.html" />
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/haber_getir.php" />
         <option value="$PROJECT_DIR$/youtube_getir.php" />
         <option value="$PROJECT_DIR$/etkinlik_getir.php" />
         <option value="$PROJECT_DIR$/testpost.php" />
@@ -84,6 +75,7 @@
         <option value="$PROJECT_DIR$/sc_api/library/class.sc_serv.api.php" />
         <option value="$PROJECT_DIR$/app.php" />
         <option value="$PROJECT_DIR$/iletisim.php" />
+        <option value="$PROJECT_DIR$/haber_getir.php" />
       </list>
     </option>
   </component>
@@ -104,10 +96,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="21" />
-    <option name="width" value="1309" />
-    <option name="height" value="747" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -242,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,8 +250,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,6 +361,7 @@
       <workItem from="1493559995969" duration="6410000" />
       <workItem from="1493931840928" duration="16000" />
       <workItem from="1494870730707" duration="3000" />
+      <workItem from="1497360201812" duration="405000" />
     </task>
     <task id="LOCAL-00001" summary="haberlerde img url geliyor.&#10;">
       <created>1490612296483</created>
@@ -388,13 +381,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33407000" />
+    <option name="totallyTimeSpent" value="33812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="21" width="1309" height="747" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120702825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15142198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1969941" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -442,9 +435,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -454,9 +447,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -505,9 +498,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -556,9 +549,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -568,9 +561,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -619,9 +612,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -670,9 +663,9 @@
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -722,9 +715,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -743,9 +736,9 @@
         <state relative-caret-position="252">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -765,9 +758,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
           </folding>
         </state>
       </provider>
@@ -801,18 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haber_getir.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <marker date="1493293622279" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
-            <marker date="1493293622279" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/etkinlik_getir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -841,6 +822,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iletisim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -849,11 +838,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iletisim.php">
+    <entry file="file://$PROJECT_DIR$/haber_getir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <marker date="1497360532926" expanded="true" signature="99:193" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:698" ph="SELECT id, t... c2ley_k2_items" />
+            <marker date="1497360532926" expanded="true" signature="593:702" ph="SELECT id, t... c2ley_k2_items" />
+          </folding>
         </state>
       </provider>
     </entry>

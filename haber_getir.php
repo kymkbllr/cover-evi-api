@@ -27,17 +27,9 @@ $haberler = [];
 //haber içindeki html taglarını sileceğiz.
 
 foreach ($data as $haber) {
-    preg_match_all('/src="(.*?)"/', $haber ["introtext"], $haber_resim);
+    $haber ["resim"] = "http://coverevi.com/media/k2/items/cache/". md5 ("Image" .$haber["id"]) . "_Generic.jpg";
 
     $haber ["introtext"] = strip_tags($haber ["introtext"]);
-
-    if (isset($haber_resim[1][0])){
-        $haber ["resim"] = "http://www.coverevi.com/" . $haber_resim[1][0];
-    }
-    else {
-        $haber ["resim"] = "http://coverevi.com/media/k2/items/cache/". md5 ("Image" .$haber["id"]) . "_Generic.jpg";
-    }
-
     $haberler [] = $haber;
 }
 
